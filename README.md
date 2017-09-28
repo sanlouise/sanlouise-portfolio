@@ -1,3 +1,9 @@
-# Farmer's Friend
+# Portfolio of Sandra Hallie
 
-This is a React/Redux dashboard for farmers.
+My portfolio website will contain:
+
+- My personal information
+- My work history
+- My past and current projects
+- A Codewars and Github integration
+- My blog posts
