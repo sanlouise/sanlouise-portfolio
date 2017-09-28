@@ -1,0 +1,14 @@
+@media(max-width: 993px) {
+  .ios-project {
+    min-height: 860px;
+  }
+  .phone {
+    margin-top: 30px;
+  }
+}
+
+@media(min-width: 993px) {
+  .ios-project {
+    min-height: 490px;
+  }
+}

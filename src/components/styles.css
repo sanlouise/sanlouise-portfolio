@@ -1,0 +1,16 @@
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  display: inline;
+  height: 40px;
+  max-width: 20%;
+  vertical-align: bottom;
+}
+
+.sidebar .sidebar-wrapper .logo .full-name {
+  display: inline-block;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

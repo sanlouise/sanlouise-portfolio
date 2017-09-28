@@ -1,82 +1,48 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import backgroundImage from '../assets/images/sidebar-5.jpg';
+import ReactSpinningLogo from '../assets/images/svgs/ReactSpinning';
+import github from '../assets/images/github-icon.png';
+import './styles.css';
 
 const SideBar = ({
   location,
-  backgroundColor,
-  enableBackgroundImage,
-  backgroundImage
 }) => (
-  <div className="sidebar" data-color={backgroundColor} data-image={backgroundImage}>
+  <div className="sidebar">
     <div className="sidebar-wrapper">
       <div className="logo">
-        <a href="http://jslancer.com" className="simple-text">
-          JSLancer
-        </a>
+        <ReactSpinningLogo className="App-logo text-center" alt="react logo" />
+        <a href="/" className="simple-text full-name">Sandra Hallie</a>
       </div>
-
       <ul className="nav">
         <li className={location.pathname === '/' ? 'active' : null}>
           <Link to="/">
-            <i className="pe-7s-graph"></i>
-            <p>Dashboard</p>
-          </Link>
-        </li>
-        <li className={location.pathname === '/profile' ? 'active' : null}>
-          <Link to="/profile">
             <i className="pe-7s-user"></i>
-            <p>User Profile</p>
+            <p>About Me</p>
           </Link>
         </li>
-        <li className={location.pathname === '/table' ? 'active' : null}>
-          <Link to="/table">
-            <i className="pe-7s-note2"></i>
-            <p>Table List</p>
-          </Link>
-        </li>
-        <li className={location.pathname === '/typography' ? 'active' : null}>
-          <Link to="typography">
-            <i className="pe-7s-news-paper"></i>
-            <p>Typography</p>
-          </Link>
-        </li>
-        <li className={location.pathname === '/icons' ? 'active' : null}>
-          <Link to="/icons">
+        <li className={location.pathname === '/projects' ? 'active' : null}>
+          <Link to="/projects">
             <i className="pe-7s-science"></i>
-            <p>Icons</p>
+            <p>Projects</p>
           </Link>
         </li>
-        <li className={location.pathname === '/map' ? 'active' : null}>
-          <Link to="/map">
-            <i className="pe-7s-map-marker"></i>
-            <p>Maps</p>
-          </Link>
+        <li>
+          <a href="https://resume.creddle.io/resume/ijhfjyvpew8">
+            <i className="pe-7s-note2"></i>
+            <p>Resume</p>
+          </a>
         </li>
-        <li className={location.pathname === '/notifications' ? 'active' : null}>
-          <Link to="notifications">
-            <i className="pe-7s-bell"></i>
-            <p>Notifications</p>
-          </Link>
+        <li>
+          <a href="https://github.com/sanlouise">
+            <i><img className="github" src={github} alt="github logo"/></i>
+            <p>Github</p>
+          </a>
         </li>
       </ul>
-    </div>
-    <div
-      className="sidebar-background"
-      style={{
-        backgroundImage: enableBackgroundImage ? 'url(' + backgroundImage + ')' : null
-      }}>
     </div>
   </div>
 );
 
-const mapStateToProps = state => ({
-  enableBackgroundImage: state.ThemeOptions.enableBackgroundImage,
-  backgroundColor: state.ThemeOptions.backgroundColor,
-  backgroundImage: state.ThemeOptions.backgroundImage
-});
 
-export default withRouter(
-  connect(mapStateToProps)(SideBar)
-);
+export default withRouter(connect()(SideBar));

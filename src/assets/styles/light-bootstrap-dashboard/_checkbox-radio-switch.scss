@@ -139,11 +139,6 @@
    -ms-user-select: none;
    -o-user-select: none;
    user-select: none;
-
-    /*   this code is for fixing safari bug with hidden overflow for border-radius   */
-    -webkit-mask: url('assets/images/mask.png') 0 0 no-repeat;
-    -webkit-mask-size: 60px 24px;
-    mask: url('assets/images/mask.png') 0 0 no-repeat;
 }
 .has-switch.deactivate {
   opacity: 0.5;
@@ -243,4 +238,3 @@
     margin: 1px -13px;
     width: 26px;
 }
-

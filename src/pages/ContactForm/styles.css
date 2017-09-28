@@ -1,0 +1,13 @@
+form {
+  font-family: 'Montserrat';
+  margin-top: 300px;
+}
+
+label {
+  font-family: 'Montserrat';
+}
+
+form p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}

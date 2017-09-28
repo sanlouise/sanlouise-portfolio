@@ -1,34 +1,17 @@
 import React from 'react';
+import github from '../../assets/images/github-icon.png';
+import linkedin from '../../assets/images/linkedin.png';
 
 const Footer = () => (
   <footer className="footer">
     <div className="container-fluid">
-      <nav className="pull-left">
-        <ul>
-          <li>
-            <a href="#">
-              Home
-                  </a>
-          </li>
-          <li>
-            <a href="#">
-              Company
-                  </a>
-          </li>
-          <li>
-            <a href="#">
-              Portfolio
-                  </a>
-          </li>
-          <li>
-            <a href="#">
-              Blog
-                  </a>
-          </li>
-        </ul>
-      </nav>
-      <p className="copyright pull-right">
-        © 2017 <a href="http://jslancer.com">JSLancer</a>, made with love for a better web
+      <p className="copyright text-center">
+        © 2017 Sandra Hallie
+        <a href="https://www.codewars.com/users/sanlouise">
+          <img src="https://www.codewars.com/users/sanlouise/badges/small" alt="codewars"/>
+        </a>
+        <a href="https://github.com/sanlouise"><img className="github" src={github} alt="github"/></a>
+        <a href="https://linkedin.com/sanlouise"><img className="github" src={linkedin} alt="linkedin"/></a>
       </p>
     </div>
   </footer>

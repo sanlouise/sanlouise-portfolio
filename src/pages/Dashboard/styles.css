@@ -1,0 +1,139 @@
+.intro-text {
+  min-height: 353px;
+  padding-top: 3%;
+}
+
+.intro-text ul {
+  margin-top: 1.5em;
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.intro-text p {
+  margin-top: 1.5em;
+  list-style-type: none;
+  padding: 0 1em;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.skills {
+  min-height: 100%;
+}
+
+@media (min-width: 992px) {
+  .skills {
+    border-left: 1px solid #000;
+  }
+}
+
+@media (max-width: 991px) {
+  .skills {
+    border-top: 1px solid #000;
+  }
+}
+
+.home .card {
+  background-color: #212731;
+  color: #FFF;
+}
+
+.home .card-user {
+  color: #FFF;
+}
+
+.blue-text {
+  color: #008fd9;
+}
+
+.small {
+  color: #008fd9;
+}
+
+.active {
+  background-color: #008fd9;
+}
+.dashboard-project {
+  position: relative;
+}
+
+@media (max-width: 993px) {
+  .dashboard-project img {
+    display: none;
+  }
+}
+
+.dashboard-project img {
+  width: 100%;
+  animation-name: 'dashboard-project-image';
+  animation-duration: 7s;
+  opacity: 0;
+}
+
+/* The animation code */
+@keyframes dashboard-project-image {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.dashboard-project h2 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  font-family: 'Montserrat';
+  animation-name: 'dashboard-project-text';
+  animation-duration: 7s;
+}
+
+/* The animation code */
+@keyframes dashboard-project-text {
+  0% {
+    opacity: 0;
+    top: 80px;
+  }
+  100% {
+    opacity: 1;
+    top: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dashboard-project-logos {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 993px) {
+  .dashboard-project-logos {
+    margin-top: -13%;
+  }
+}
+
+.dashboard-project-logos {
+  animation-name: 'dashboard-project-logos';
+  animation-duration: 9s;
+  opacity: 1;
+}
+
+/* The animation code */
+@keyframes dashboard-project-logos {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}

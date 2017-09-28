@@ -1,24 +1,22 @@
 import React from 'react';
-import { Route, Router } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import cx from 'classnames';
-import { setMobileNavVisibility } from '../../reducers/Layout';
+
+// Internals
 import Header from './Header';
 import Footer from './Footer';
+
+// Externals
 import SideBar from '../../components/SideBar';
-import ThemeOptions from '../../components/ThemeOptions';
 import MobileMenu from '../../components/MobileMenu';
-/**
- * Pages
- */
 import Dashboard from '../Dashboard';
-import UserProfile from '../UserProfile';
-import TableList from '../TableList';
-import Typography from '../Typography';
-import Icons from '../Icons';
-import MapsPage from '../MapsPage';
-import Notifications from '../Notifications';
-import { withRouter } from 'react-router-dom';
+import ContactForm from '../ContactForm';
+import Projects from '../Projects';
+import IosProjects from '../IosProjects';
+import { setMobileNavVisibility } from '../../reducers/Layout';
+
 const Main = ({
   mobileNavVisibility,
   hideMobileMenu,
@@ -35,17 +33,15 @@ const Main = ({
     })}>
       <div className="wrapper">
         <SideBar />
-        <ThemeOptions />
 
         <div className="main-panel">
           <Header />
-          <Route exact path="/" component={Dashboard} />
-          <Route path="/profile" component={UserProfile} />
-          <Route path="/table" component={TableList} />
-          <Route path="/typography" component={Typography} />
-          <Route path="/icons" component={Icons} />
-          <Route path="/map" component={MapsPage} />
-          <Route path="/notifications" component={Notifications} />
+            <Switch>
+              <Route exact path="/" component={Dashboard} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/ios-projects" component={IosProjects} />
+              <Route path="/contact" component={ContactForm} />
+            </Switch>
           <Footer />
         </div>
       </div>
@@ -54,7 +50,7 @@ const Main = ({
   )
 };
 
-const mapStateToProp = state => ({
+const mapStateToProps = state => ({
   mobileNavVisibility: state.Layout.mobileNavVisibility
 });
 
@@ -62,4 +58,4 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
   hideMobileMenu: () => dispatch(setMobileNavVisibility(false))
 });
 
-export default withRouter(connect(mapStateToProp, mapDispatchToProps)(Main));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));

@@ -1,7 +1,7 @@
 .btn{
     border-width: $border-thick;
     background-color: $transparent-bg;
-    font-weight: $font-weight-normal;
+    font-weight: $font-weight-light;
     
     @include opacity(.8);
     padding: $padding-base-vertical $padding-base-horizontal;
@@ -82,7 +82,7 @@
 }
 .btn-lg{
    @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $border-radius-large);
-   font-weight: $font-weight-normal;
+   font-weight: $font-weight-light;
 }
 .btn-sm{
     @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $border-radius-small);    

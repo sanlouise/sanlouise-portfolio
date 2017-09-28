@@ -1,6 +1,6 @@
 .card{
-    border-radius: $border-radius-base;
-    box-shadow: 0 1px 2px rgba(0,0,0,.05),0 0 0 1px rgba(63,63,68,.1);
+    border-radius: 0px;
+    border: 1px solid #545E75;
     background-color: #FFFFFF;
     margin-bottom: 30px;
 
@@ -44,7 +44,7 @@
         @include opacity(1);
     }
     .content{
-        padding: 15px 15px 10px 15px;
+        padding: 5px 5px 5px 5px;
     }
     .header{
         padding: 15px 15px 0;
@@ -52,7 +52,7 @@
     .category,
     label{
         font-size: 14px;
-        font-weight: $font-weight-normal;
+        font-weight: $font-weight-light;
         color: $dark-gray;
         margin-bottom: 0px;
 
@@ -81,7 +81,7 @@
     }
     .description{
         font-size: $font-size-base;
-        color: #333;
+        color: #FFF;
     }
     .footer{
         padding: 0;
@@ -168,19 +168,16 @@
     .avatar{
         width: 124px;
         height: 124px;
-        border: 5px solid #FFFFFF;
+        border: 5px solid #008fd9;
         position: relative;
         margin-bottom: 15px;
 
-        &.border-gray{
-            border-color: #EEEEEE;
-        }
     }
     .title{
         line-height: 24px;
     }
     .content{
-        min-height: 240px;
+        height: 240px;
     }
 }
 
@@ -202,6 +199,3 @@
         border-radius: 4px;
     }
 }
-
-
-

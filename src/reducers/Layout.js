@@ -10,15 +10,25 @@ export const toggleMobileNavVisibility = () => (dispatch, getState) => {
   dispatch(setMobileNavVisibility(!visibility));
 }
 
-export default function reducer(state = {
-  mobileNavVisibility: false
-}, action) {
+const initialState = {
+  mobileNavVisibility: false,
+};
+
+const layoutReducer = (state = initialState, action) => {
   switch (action.type) {
-    case SET_MOBILE_NAV_VISIBILITY:
+    case SET_MOBILE_NAV_VISIBILITY: {
       return {
         ...state,
         mobileNavVisibility: action.visibility
       };
+    }
+    default: {
+      return {
+        ...state,
+        mobileNavVisibility: action.visibility
+      };
+    }
   }
-  return state;
 }
+
+export default layoutReducer;

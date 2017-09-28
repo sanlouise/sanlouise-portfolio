@@ -1,0 +1,78 @@
+.projects {
+  padding: 20px 0;
+}
+
+@media(max-width:993px) {
+  .project {
+    text-align: center;
+  }
+
+  .project-image {
+    margin: 30px 0;
+    max-width: 500px;
+    text-align: center;
+  }
+}
+
+.projects img {
+  max-height: auto;
+  max-width: 380px;
+}
+
+.projects ul {
+  margin-top: 1.5em;
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.project {
+  margin: 2em;
+}
+
+.projects .title {
+  color: #000;
+}
+
+hr {
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #008fd9;
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+.divider {
+  padding: 1em 0;
+  max-width: 50vw;
+}
+
+.card .title {
+  margin-top: 1em;
+}
+
+.card h3 {
+  font-family: "Montserrat";
+}
+
+@media(max-width:601px) {
+  .projects img {
+    max-width: 250px;
+  }
+}
+
+@media(min-width:993px) {
+  .project-image {
+    margin-top: 4%;
+  }
+}
+
+.technologies {
+  color: #008fd9;
+}
+
+.github {
+  max-height: 25px;
+  width: auto;
+}
