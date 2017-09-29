@@ -64,7 +64,7 @@ class Projects extends Component {
             </div>
 
               {map(filterProjects(), (project) => (
-                <div className="col-xs-12" key={project.id}>
+                <div className="project-div col-xs-12" key={project.id}>
                   <hr />
                   <div className="col-md-5 col-sm-12 project-info">
                     <h3 className="title">{project.name}</h3>

@@ -1,5 +1,9 @@
-.projects {
-  padding: 20px 0;
+.project-div {
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+  padding: 30px 10px;
+  border-bottom: 1px solid #008fd9;
 }
 
 @media(max-width:993px) {
@@ -8,9 +12,16 @@
   }
 
   .project-image {
-    margin: 30px 0;
     max-width: 500px;
     text-align: center;
+  }
+}
+
+
+@media(min-width:993px) {
+
+  .projects {
+    padding: 40px 20px;
   }
 }
 
@@ -55,12 +66,6 @@ hr {
 @media(max-width:601px) {
   .projects img {
     max-width: 250px;
-  }
-}
-
-@media(min-width:993px) {
-  .project-image {
-    margin-top: 4%;
   }
 }
 
