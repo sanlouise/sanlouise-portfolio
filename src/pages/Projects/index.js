@@ -56,6 +56,7 @@ class Projects extends Component {
           <div className="card projects">
             <div className="header text-center">
               <h2 className="title">Thank you for checking out my projects.</h2>
+              <p className="subtitle">I encourage you to also look at my <a href="https://github.com/sanlouise">Github</a> profile.</p>
               <Options
                 toggleFilter={toggleFilter}
                 options={state}

@@ -15,8 +15,9 @@ const projects = [
     type: "React",
     description: "Users can filter through products and add their favorites to their cart.",
     points: [
-      "Developed from scratch with scaffolding.",
-      "Designed UI with custom CSS, Sass, Twitter Bootstrap and JavaScript/JQuery.",
+      "Implemented redux store, reducers and actions.",
+      "Consistently used lodash to optimize codebase.",
+      "Designed UI with custom css and material-ui.",
     ],
     src: dressy,
     github: "https://github.com/sanlouise/ecommerce-react/",
@@ -29,12 +30,8 @@ const projects = [
     type: "React",
     description: "Published to NPM as sl-react-components-library",
     points: [
-      "Developed from scratch with scaffolding.",
-      "Designed UI with custom CSS, Sass, Twitter Bootstrap and JavaScript/JQuery.",
-      "Used Yahoo API for tracking stock markets.",
-      "Applied Devise gem for user authentication.",
-      "Implemented auto complete search function using AJAX.",
-      "Deployed application using Heroku with PostgreSQL."
+      "This library is designed to help developers quickly build out UIs.",
+      "NOTE: This is a work-in-progress app that is envolving on a daily basis."
     ],
     src: react_image,
     github: "https://github.com/sanlouise/react-components-library",
