@@ -154,9 +154,11 @@
         padding: 10px 15px;
       }
     }
+
+    // Note: Width of sidebar when opened
     .nav-open .navbar-collapse{
       @include transform-translate-x(0px);
-      width: calc(100% - 155px);
+      width: calc(100% - 140px);
     }
     .nav-open .navbar .container{
       left: -250px;
