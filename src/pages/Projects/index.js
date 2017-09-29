@@ -66,7 +66,7 @@ class Projects extends Component {
                 <div className="content container">
                   <div className="row">
                     {map(filterProjects(), (project) => (
-                      <div className="project container" key={project.id}>
+                      <div className="project" key={project.id}>
                         <hr className="divider"/>
                         <div className="col-md-5 col-sm-12 project-info">
                           <h3 className="title">{project.name}</h3>
@@ -80,7 +80,7 @@ class Projects extends Component {
                           </ul>
                           <a href={project.github}>View on Github <img className="github" src={github} alt="github logo"/></a>
                         </div>
-                        <div className="col-md-4 col-sm-12 project-image">
+                        <div className="col-md- col-sm-12 project-image">
                           {project.url ? (
                             <a href={project.url}><img src={project.src} alt="project"/></a>
                           ) : (

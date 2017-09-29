@@ -41,7 +41,7 @@ const IosProjects = () => (
                       <a href={project.github}>View on Github <img className="github" src={github} alt="github logo"/></a>
                     </div>
                     <div className="col-xs-12 col-md-5 phone text-center">
-                      <Iframe url={project.src} width="183px" height="391px" />
+                      <Iframe url={project.src} width="183px" height="391px"/>
                     </div>
                   </div>
                 ))}

@@ -8,9 +8,8 @@ const InfoCard = () => (
     <div className="content">
       <div className="author">
         <img className="avatar" src={profileImage} alt="Sandra Hallie" />
-        <h4 className="title">
+        <h4 className="name">
           Sandra Hallie<br />
-          <small>sanlouise</small>
         </h4>
       </div>
       <p className="description text-center">
