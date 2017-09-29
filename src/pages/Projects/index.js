@@ -68,8 +68,7 @@ class Projects extends Component {
                   <hr />
                   <div className="col-md-5 col-sm-12 project-info">
                     <h3 className="title">{project.name}</h3>
-                    <h5>Built with: <span className="technologies">{project.technologies}</span>
-                    </h5>
+                    <h5>Built with: <strong>{project.technologies}</strong></h5>
                     <p>{project.description}</p>
                     <ul>
                       {map(project.points, (point) => (

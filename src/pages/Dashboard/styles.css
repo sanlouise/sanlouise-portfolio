@@ -92,6 +92,7 @@
   animation-name: 'dashboard-project-text';
   animation-duration: 5s;
   color: #13171D;
+  transition: color 1s;
 }
 
 .dasboard-project h2 a:hover {
@@ -144,4 +145,8 @@
   100% {
     opacity: 1;
   }
+}
+
+.dashboard-project-text:hover {
+  color: #008fd9;
 }
