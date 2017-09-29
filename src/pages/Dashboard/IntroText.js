@@ -20,6 +20,7 @@ const IntroText = () => (
           <li>Node.js</li>
           <li>Express</li>
           <li>JavaScript</li>
+          <li>Ruby on Rails</li>
           <li>HTML5</li>
           <li>CSS3</li>
         </ul>
