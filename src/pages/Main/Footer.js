@@ -11,7 +11,7 @@ const Footer = () => (
           <img src="https://www.codewars.com/users/sanlouise/badges/small" alt="codewars"/>
         </a>
         <a href="https://github.com/sanlouise"><img className="github" src={github} alt="github"/></a>
-        <a href="https://linkedin.com/sanlouise"><img className="github" src={linkedin} alt="linkedin"/></a>
+        <a href="https://linkedin.com/in/sanlouise"><img className="github" src={linkedin} alt="linkedin"/></a>
       </p>
     </div>
   </footer>
