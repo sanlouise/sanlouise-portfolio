@@ -68,7 +68,7 @@
 .dashboard-project img {
   width: 100%;
   animation-name: 'dashboard-project-image';
-  animation-duration: 10s;
+  animation-duration: 7s;
   opacity: 0;
 }
 
@@ -76,10 +76,6 @@
 @keyframes dashboard-project-image {
   0% {
     opacity: 1;
-  }
-
-  35% {
-    opacity: 1
   }
 
   100% {
@@ -94,8 +90,17 @@
   width: 100%;
   font-family: 'Montserrat';
   animation-name: 'dashboard-project-text';
-  animation-duration: 7s;
+  animation-duration: 5s;
+  color: #13171D;
 }
+
+.dasboard-project h2 a:hover {
+  transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+  background-position: 0%;
+}
+
+
+
 
 /* The animation code */
 @keyframes dashboard-project-text {
@@ -103,12 +108,6 @@
     opacity: 0;
     top: 80px;
   }
-
-  35% {
-    opacity: 0;
-    top: 80px;
-  }
-
 
   100% {
     opacity: 1;
@@ -130,16 +129,13 @@
 
 .dashboard-project-logos {
   animation-name: 'dashboard-project-logos';
-  animation-duration: 9s;
+  animation-duration: 7s;
   opacity: 1;
 }
 
 /* The animation code */
 @keyframes dashboard-project-logos {
   0% {
-    opacity: 0;
-  }
-  35% {
     opacity: 0;
   }
   50% {

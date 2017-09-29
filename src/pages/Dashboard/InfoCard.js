@@ -13,7 +13,7 @@ const InfoCard = () => (
         </h4>
       </div>
       <p className="description text-center">
-        I am a React developer with a true love for Javascript, currently interested in 100% remote positions.
+        I am a React developer and JavaScript fanatic.
       </p>
     </div>
   </div>

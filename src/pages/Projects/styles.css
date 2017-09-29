@@ -17,7 +17,6 @@
   }
 }
 
-
 @media(min-width:993px) {
 
   .projects {
@@ -32,9 +31,8 @@
 
 .projects ul {
   margin-top: 1.5em;
-  list-style-type: none;
   padding: 0;
-  font-size: 1.1em;
+  font-size: 0.9em;
   line-height: 1.5em;
 }
 

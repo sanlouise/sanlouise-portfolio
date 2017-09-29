@@ -7,8 +7,8 @@ const IntroText = () => (
       <div className="col-sm-12 col-md-9">
         <h3>Thanks for stopping by!</h3>
         <p>My name is Sandra. I really <strong>love</strong> Javascript.</p>
-        <p>I'm improving my skills every day coding out projects and doing <a href="https://www.codewars.com/users/sanlouise">Codewars</a>. Feel free to check out my projects and <a href="https://github.com/sanlouise">Github</a> profile.</p>
-        <p>Any questions? Need a website or an app built? Let's talk!</p>
+        <p>When I'm not <a href="https://github.com/sanlouise">building apps</a> on Github for clients, you can find me hacking away on <a href="https://www.codewars.com/users/sanlouise">Codewars</a>.</p>
+        <p>Want to talk code? <a href="mailto:sandra.adamshallie@gmail.com" target="_top">Message me!</a></p>
 
       </div>
 
@@ -16,13 +16,12 @@ const IntroText = () => (
         <h3>Skills</h3>
         <ul>
           <li>React</li>
+          <li>Redux</li>
           <li>Node.js</li>
-          <li>Javascript</li>
-          <li>Ruby on Rails</li>
-          <li>SQL</li>
-          <li>Postgresql</li>
-          <li>HTML</li>
-          <li>CSS</li>
+          <li>Express</li>
+          <li>JavaScript</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
         </ul>
       </div>
 
