@@ -51,59 +51,54 @@ class Projects extends Component {
     const { filterProjects, state, toggleFilter } = this;
     return (
 
-      <div className="content">
-        <div className="container-fluid content">
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="card projects">
-                <div className="header text-center">
-                  <h2 className="title">Thank you for checking out my projects.</h2>
-                  <Options
-                    toggleFilter={toggleFilter}
-                    options={state}
-                  />
-                </div>
-                <div className="content container">
-                  <div className="row">
-                    {map(filterProjects(), (project) => (
-                      <div className="project" key={project.id}>
-                        <hr className="divider"/>
-                        <div className="col-md-5 col-sm-12 project-info">
-                          <h3 className="title">{project.name}</h3>
-                          <h5>Built with: <span className="technologies">{project.technologies}</span>
-                          </h5>
-                          <p>{project.description}</p>
-                          <ul>
-                            {map(project.points, (point) => (
-                              <li key={point}>{point}</li>
-                            ))}
-                          </ul>
-                          <a href={project.github}>View on Github <img className="github" src={github} alt="github logo"/></a>
-                        </div>
-                        <div className="col-md- col-sm-12 project-image">
-                          {project.url ? (
-                            <a href={project.url}><img src={project.src} alt="project"/></a>
-                          ) : (
-                            <img src={project.src} alt="project"/>
-                          )}
-                        </div>
-                      </div>
+      <div className="container-fluid row">
+        <div className="col-sm-12">
+          <div className="card projects">
+            <div className="header text-center">
+              <h2 className="title">Thank you for checking out my projects.</h2>
+              <Options
+                toggleFilter={toggleFilter}
+                options={state}
+              />
+            </div>
 
-                    ))}
+              {map(filterProjects(), (project) => (
+                <div className="col-xs-12" key={project.id}>
+                  <hr />
+                  <div className="col-md-5 col-sm-12 project-info">
+                    <h3 className="title">{project.name}</h3>
+                    <h5>Built with: <span className="technologies">{project.technologies}</span>
+                    </h5>
+                    <p>{project.description}</p>
+                    <ul>
+                      {map(project.points, (point) => (
+                        <li key={point}>{point}</li>
+                      ))}
+                    </ul>
+                    <a href={project.github}>View on Github <img className="github" src={github} alt="github logo"/></a>
+                  </div>
+                  <div className="col-md-4 col-sm-12 project-image">
+                    {project.url ? (
+                      <a href={project.url}><img src={project.src} alt="project"/></a>
+                    ) : (
+                      <img src={project.src} alt="project"/>
+                    )}
                   </div>
                 </div>
-                <div className="text-center">
-                  <Link to="/ios-projects">
-                    <button className="btn btn-default">
-                      View My iOS Projects
-                    </button>
-                  </Link>
-                </div>
-              </div>
+              ))}
+
+            <div className="text-center">
+              <Link to="/ios-projects">
+                <button className="btn btn-default">
+                  View My iOS Projects
+                </button>
+              </Link>
             </div>
+
           </div>
         </div>
       </div>
+
     )
   }
 };
