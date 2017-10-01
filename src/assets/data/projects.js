@@ -1,11 +1,12 @@
-import dressy from '../images/projects/dressy.png';
-import conscioux from '../images/projects/conscioux_s.png';
-import weather_app from '../images/projects/weather_api_s.png';
-import project_management from '../images/projects/project_s.png';
-import stocktracker from '../images/projects/stocktracker_s.png';
-import react_image from '../images/projects/react_image.png';
 import chatty from '../images/projects/chatty_s.png';
+import conscioux from '../images/projects/conscioux_s.png';
+import dressy from '../images/projects/dressy.png';
 import globetrotter from '../images/projects/globetrotter_s.png';
+import project_management from '../images/projects/project_s.png';
+import react_image from '../images/projects/react_image.png';
+import stocktracker from '../images/projects/stocktracker_s.png';
+import sorty from '../images/projects/sorty.png';
+import weather_app from '../images/projects/weather_api_s.png';
 
 const projects = [
   {
@@ -25,6 +26,22 @@ const projects = [
   },
   {
     id: 2,
+    name: "Sorty",
+    technologies: ["React", " & Redux", " & Redux-Saga", " & Reselect", " & Immutable.js"],
+    type: "React",
+    description: "Find out how to use sorting algorithms in Ruby and JavaScript.",
+    points: [
+      "Select portions of Redux store's state using Reselect selectors.",
+      "Make calls to API using Redux-Saga middelware.",
+      "Ensure Redux store's state is never modified by using Immutable.js.",
+      "Utilized React-Helmet for SEO optimization.",
+    ],
+    src: sorty,
+    github: "https://github.com/sanlouise/algorithms-saga",
+    url: "https://sorty-algorithms.herokuapp.com/",
+  },
+  {
+    id: 3,
     name: "React Component Library",
     technologies: ["React"],
     type: "React",
@@ -38,7 +55,7 @@ const projects = [
     url: "",
   },
   {
-    id: 3,
+    id: 4,
     name: "React Weather App",
     technologies: ["React", " & Redux", " & Highcharts"],
     type: "React",
@@ -55,7 +72,7 @@ const projects = [
     url: "",
   },
   {
-    id: 4,
+    id: 5,
     name: "Node Chat App",
     technologies: ["Node.js"],
     type: "Node",
@@ -71,7 +88,7 @@ const projects = [
     url: "http://nodejs-chatty.herokuapp.com/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Conscioux",
     technologies: ["Ruby on Rails"],
     type: "Ruby on Rails",
@@ -87,7 +104,7 @@ const projects = [
     url: "http://www.conscioux.com/",
   },
   {
-    id: 6,
+    id: 7,
     name: "Stock Tracker",
     technologies: ["Ruby on Rails"],
     type: "Ruby on Rails",
@@ -105,7 +122,7 @@ const projects = [
     url: "http://socialstocktracker.herokuapp.com/",
   },
   {
-    id: 7,
+    id: 8,
     name: "Data Flow",
     technologies: ["Ruby on Rails"],
     type: "Ruby on Rails",
@@ -123,7 +140,7 @@ const projects = [
     url: "http://socialstocktracker.herokuapp.com/",
   },
   {
-    id: 8,
+    id: 9,
     name: "Globetrotter",
     technologies: ["Ruby on Rails"],
     type: "Ruby on Rails",
