@@ -32,7 +32,7 @@ const projects = [
     description: "Find out how to use sorting algorithms in Ruby and JavaScript.",
     points: [
       "Select portions of Redux store's state using Reselect selectors.",
-      "Make calls to API using Redux-Saga middelware.",
+      "Make calls to API using Redux-Saga middleware.",
       "Ensure Redux store's state is never modified by using Immutable.js.",
       "Utilized React-Helmet for SEO optimization.",
     ],
