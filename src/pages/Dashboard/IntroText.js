@@ -7,7 +7,7 @@ const IntroText = () => (
       <div className="col-sm-12 col-md-9">
         <h3>Thanks for stopping by!</h3>
         <p>My name is Sandra. I really <strong>love</strong> Javascript.</p>
-        <p>When I'm not <a href="https://github.com/sanlouise">building apps</a> on Github for clients, you can find me hacking away on <a href="https://www.codewars.com/users/sanlouise">Codewars</a>.</p>
+        <p>When I'm not <a href="https://github.com/sanlouise">building apps</a>, you can find me hacking away on <a href="https://www.codewars.com/users/sanlouise">Codewars</a>.</p>
         <p>Want to talk code? <a href="mailto:sandra.adamshallie@gmail.com" target="_top">Message me!</a></p>
 
       </div>
