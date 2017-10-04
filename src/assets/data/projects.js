@@ -48,7 +48,7 @@ const projects = [
     description: "Published to NPM as sl-react-components-library",
     points: [
       "This library is designed to help developers quickly build out UIs.",
-      "NOTE: This is a work-in-progress app that is envolving on a daily basis."
+      "NOTE: This is a work-in-progress app that is evolving daily."
     ],
     src: react_image,
     github: "https://github.com/sanlouise/react-components-library",
